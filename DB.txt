@@ -1,0 +1,9 @@
+DB SQL commandes  :
+        SHOW DATABASES;
+        CREATE DATABASE name;
+        DROP DATABASE name;
+        USE name;
+DB tables :
+        CREATE TABLE cats(name DATA_TYPE(size) ...);
+        SHOW TABLES;
+        DESCRIBE name;
