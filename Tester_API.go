@@ -20,7 +20,7 @@ type Client struct{
 
 func AddAnOrdre() error {
 	url := "http://localhost:8080/Commande"
-    data := Client{Name: "bakr", Phone: "0632343698", Adress: "Benguerir", Ordre: "Kabba chamiya", State:  0}
+    data := Client{Name: "hamidhamid", Phone: "0632343698", Adress: "Benguerir", Ordre: "Kabba chamiya", State:  0}
     payload, err := json.Marshal(data)
     if err != nil {
         return errors.New("Json Encoding")
@@ -98,9 +98,9 @@ var err error
 
 func main() {
     // err = Get_the_DB()
-    err = ChangeState()
+    // err = ChangeState()
     // err = Get_the_DB()
-    // err = AddAnOrdre()
+    err = AddAnOrdre()
 	if (err != nil){
 		fmt.Println("Error: ", err)
 	}
